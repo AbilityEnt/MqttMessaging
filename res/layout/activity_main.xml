@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.mqttmessaging.MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_your_connection_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_your_connection_id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/b_add_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addConnection"
+        android:text="@string/b_add_connection" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_add_connection"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_your_connection_id"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_connection_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/txt_connection_help"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/lv_connections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_connection_help" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

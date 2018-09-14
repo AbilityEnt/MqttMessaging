@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MqttMessaging</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Mqtt Strings -->
+    <string name="timestamp">&lt;br/&gt; &lt;small&gt; %1$s &lt;/small&gt;</string>
+    <string name='dateFormat'>dd/MM/yy \'at\' HH:mm:ss</string>
+    <string name="connectedto">Connected to </string>
+    <string name="disconnected">Disconnected from</string>
+    <string name="no_status">Unknown connection status to</string>
+    <string name="connecting">Connecting to</string>
+    <string name="disconnecting">Disconnecting from</string>
+    <string name="connectionError">An error occurred connecting to</string>
+    <string name="toast_pub_success">Published message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_success">Subscribed to %1$s</string>
+    <string name="toast_disconnected">Disconnected</string>
+    <string name="toast_pub_failed">Failed to publish message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_failed">Failed to subscribe to %1$s</string>
+    <string name="b_send">Send</string>
+    <string name="b_add_connection">Add a connection</string>
+    <string name="txt_your_connection_id">Your connection id here</string>
+    <string name="txt_connection_help">Click the \"Add connection ID\" button to add the unique id of the android device you are connecting to.</string>
+    <string name="hint_connection_id">Enter Connection Id</string>
+    <string name="hint_connection_name">Name for this connection</string>
+
+</resources>
